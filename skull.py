@@ -47,5 +47,6 @@ X = new_data
 y = target
 neigh = KNeighborsClassifier(n_neighbors=1)
 neigh.fit(X,y)
-print(neigh.predict(new_data[10]))
+print ('Prediction', neigh.predict(X[[40]]))
+print ('Actual: ', y[40])
 
